@@ -3,8 +3,17 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Documentación to_literal (PyPI)
 ======================================
+Documentación: To_Literal
+======================================
+________________________
+
+
+.. image:: _static/images/logo.png
+   :alt: Logo de la Documentación
+   :width: 210px
+   :align: center
+
 
 .. toctree::
    :maxdepth: 4

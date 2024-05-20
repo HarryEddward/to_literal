@@ -19,22 +19,3 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
-
-.. grid:: 1 2 2 3
-   :gutter: 3
-
-   .. card:: Tarjeta 1
-
-      **Este es el contenido de la tarjeta 1.**
-
-   .. card:: Tarjeta 2
-
-      **Este es el contenido de la tarjeta 2.**
-
-   .. card:: Tarjeta 3
-
-      **Este es el contenido de la tarjeta 3.**
-
-   .. card:: Tarjeta 4
-
-      **Este es el contenido de la tarjeta 4.**

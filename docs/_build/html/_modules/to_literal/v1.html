@@ -17,6 +17,7 @@
     <meta name="twitter:title" content="to_literal.v1 | documentación de to_literal - " />
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8d216cef" />
       <link rel="stylesheet" type="text/css" href="../../_static/theme.css?v=8958d2b4" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=b9f13909" />
         <link rel="search" title="Búsqueda" href="../../search.html" />
         <link rel="index" title="Índice" href="../../genindex.html" />
 
@@ -102,9 +103,11 @@
   <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../modules.html">src</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../src.html">src package</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../src.to_literal.html">src.to_literal package</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../src.to_literal.v1.html">src.to_literal.v1 package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../to_literal.html">to_literal package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../to_literal.v1.html">to_literal.v1 package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../to_literal.v1.html">to_literal.v1 package</a></li>
 </ul>
 </li>
 </ul>
@@ -150,39 +153,6 @@
     <div id="content" role="main">
       <h1>Código fuente para to_literal.v1</h1><div class="highlight"><pre>
 <span></span>
-<span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">CherryPy implements a simple caching system as a pluggable Tool. This tool</span>
-<span class="sd">tries to be an (in-process) HTTP/1.1-compliant cache. It&#39;s not quite there</span>
-<span class="sd">yet, but it&#39;s probably good enough for most sites.</span>
-
-<span class="sd">In general, GET responses are cached (along with selecting headers) and, if</span>
-<span class="sd">another request arrives for the same resource, the caching Tool will return 304</span>
-<span class="sd">Not Modified if possible, or serve the cached response otherwise. It also sets</span>
-<span class="sd">request.cached to True if serving a cached representation, and sets</span>
-<span class="sd">request.cacheable to False (so it doesn&#39;t get cached again).</span>
-
-<span class="sd">If POST, PUT, or DELETE requests are made for a cached resource, they</span>
-<span class="sd">invalidate (delete) any cached response.</span>
-
-<span class="sd">Usage</span>
-<span class="sd">=====</span>
-
-<span class="sd">Configuration file example::</span>
-
-<span class="sd">    [/]</span>
-<span class="sd">    tools.caching.on = True</span>
-<span class="sd">    tools.caching.delay = 3600</span>
-
-<span class="sd">You may use a class other than the default</span>
-<span class="sd">:class:`MemoryCache&lt;cherrypy.lib.caching.MemoryCache&gt;` by supplying the config</span>
-<span class="sd">entry ``cache_class``; supply the full dotted name of the replacement class</span>
-<span class="sd">as the config value. It must implement the basic methods ``get``, ``put``,</span>
-<span class="sd">``delete``, and ``clear``.</span>
-
-<span class="sd">You may set any attribute, including overriding methods, on the cache</span>
-<span class="sd">instance by providing them in config. The above sets the</span>
-<span class="sd">:attr:`delay&lt;cherrypy.lib.caching.MemoryCache.delay&gt;` attribute, for example.</span>
-<span class="sd">&quot;&quot;&quot;</span>
 <span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Union</span>
 <span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Literal</span>
 <span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
@@ -194,7 +164,7 @@
 <span class="k">def</span> <span class="nf">toLiteral</span><span class="p">(</span><span class="n">array</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">list</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Convierte una lista/tupla a un Literal[]</span>
-<span class="sd">    </span>
+
 <span class="sd">    </span>
 <span class="sd">    :param array: (Union[list, tuple]): Lista/Tupla sobre valores de forma en general</span>
 <span class="sd">    </span>

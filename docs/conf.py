@@ -46,3 +46,7 @@ language = 'es'
 html_permalinks_icon = '<span>#</span>'
 html_theme = 'sphinxawesome_theme'
 html_static_path = ['_static']
+
+html_css_files = [
+    'css/custom.css',
+]

@@ -2,7 +2,7 @@ src
 ===
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 10
 
    to_literal
    to_literal.v1
