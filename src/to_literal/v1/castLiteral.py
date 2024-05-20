@@ -3,7 +3,9 @@ from typing import Union
 from typing import Literal
 from typing import List
 
-def toLiteral(array: Union[list, tuple]) -> tuple:
+import typing
+
+def toLiteral(array: Union[list, tuple]) -> List:
     """
     Convierte una lista/tupla a un Literal[]
     
@@ -14,8 +16,17 @@ def toLiteral(array: Union[list, tuple]) -> tuple:
 
     """
 
+    def parse() -> List:
+        val = f"literal = typing.Literal{array}"
+        exec(val, globals())
+
+        return literal
+
     if isinstance(array, tuple):
-        pass
+        array = list(array)
+        parse(array)
 
     if isinstance(array, list):
-        pass
+        parse(array)
+        
+        

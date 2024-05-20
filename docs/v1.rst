@@ -1,0 +1,21 @@
+v1 package
+==========
+
+Submodules
+----------
+
+v1.castLiteral module
+---------------------
+
+.. automodule:: v1.castLiteral
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: v1
+   :members:
+   :undoc-members:
+   :show-inheritance:
