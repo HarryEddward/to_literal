@@ -53,8 +53,18 @@ hoursL = toLiteral([
 class testLiteral(BaseModel):
     hours: hoursL
 
-''' YES  -> '''  test = testLiteral(hours='9:30')
-''' NO   -> '''  test = testLiteral(hours='10:30')
 
-print(test.model_dump())
+#   Good Example:
+#
+#   YES  ->   test = testLiteral(hours='9:30')
+#   print(test.model_dump())
+#   { 
+#     'hours': '9:30'
+#   }
+
+
+#   Bad Example:
+#   NO   ->   test = testLiteral(hours='10:30')
+#   print(test.model_dump())
+#   ERROR
 ```
