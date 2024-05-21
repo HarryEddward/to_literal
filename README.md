@@ -41,6 +41,7 @@ Usuarios que hacen uso de pydantic y uso de typing en su código de python y nec
 
 ```print(result) #typing.Literal[ 1, 2, 3, 4, 5 ]```
 
+## Como usarlo?
 ```
 from pydantic import BaseModel
 from to_literal.v1 import toLiteral
