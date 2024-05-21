@@ -64,6 +64,7 @@ class testLiteral(BaseModel):
 
 
 #   Bad Example:
+#
 #   NO   ->   test = testLiteral(hours='10:30')
 #   print(test.model_dump())
 #   ERROR
