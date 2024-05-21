@@ -8,4 +8,5 @@ setup(
     author_email='au7812ooae32@gmail.com',
     maintainer='Adrià Martín Martorell',
     maintainer_email='au7812ooae32@gmail.com',
+    packages=find_packages()
 )

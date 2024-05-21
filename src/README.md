@@ -40,3 +40,20 @@ Usuarios que hacen uso de pydantic y uso de typing en su código de python y nec
 **Vemos que tipo és:**
 
 ```print(result) #typing.Literal[ 1, 2, 3, 4, 5 ]```
+
+
+```from pydantic import BaseModel```
+```from to_literal.v1 import toLiteral```
+
+```hoursL = toLiteral([```
+```    '9:00',```
+```    '9:30',```
+```])```
+
+```class testLiteral(BaseModel):```
+```    hours: hoursL```
+
+```''' YES  -> '''  test = testLiteral(hours='9:30')```
+```''' NO   -> '''  test = testLiteral(hours='10:30')```
+
+```print(test.model_dump())```
