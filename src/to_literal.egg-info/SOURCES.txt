@@ -1,5 +1,4 @@
 LICENSE
-README.md
 setup.py
 tests/__init__.py
 tests/v1/__init__.py
