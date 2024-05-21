@@ -31,7 +31,7 @@ Usuarios que hacen uso de pydantic y uso de typing en su código de python y nec
 
 Importamos la librería:
 
-```from to_literal import cast as toLiteral ```
+```from to_literal.v1 import toLiteral```
 
 Hacemos úso del cast:
 
