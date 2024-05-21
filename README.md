@@ -29,15 +29,15 @@ Usuarios que hacen uso de pydantic y uso de typing en su código de python y nec
 
 ## Como usarlo de forma simple?
 
-**Importamos la librería:**
+Importamos la librería:
 
 ```from to_literal import cast as toLiteral ```
 
-**Hacemos úso del cast:**
+Hacemos úso del cast:
 
 ```result =  toLiteral([ 1, 2, 3, 4, 5 ])```
 
-**Vemos que tipo és:**
+Vemos que tipo és:
 
 ```print(result) #typing.Literal[ 1, 2, 3, 4, 5 ]```
 
