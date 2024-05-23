@@ -12,13 +12,14 @@ To_Literal
    :height: 300px
    :align: center
 
-==============================
-**Cambia de forma fácil a Literal[ ]**
-==============================
+
 
 .. raw:: html
 
    <div align="center">
+==============================
+**Cambia de forma fácil a Literal[ ]**
+==============================
 
 `Explora en la documentación » <https://peluqueriamael.com/docs>`_
 
