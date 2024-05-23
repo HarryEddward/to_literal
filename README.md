@@ -1,5 +1,6 @@
 # To_Literal
 
+[![Redis](https://badges.gitter.im/Join%20Chat.svg)](#)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/to_literal)
 
 <br>
