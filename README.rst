@@ -49,16 +49,20 @@ How to use it in a simple way?
 
 Import the library:
 
-```from to_literal.v1 import toLiteral```
+.. code-block:: python
+
+  from to_literal.v1 import toLiteral
 
 Make use of the cast:
 
-```result =  toLiteral([ 1, 2, 3, 4, 5 ])```
+.. code-block:: python
+
+  result =  toLiteral([ 1, 2, 3, 4, 5 ])
 
 See what type it is:
 
 .. code-block:: python
-  
+
   print(result) #typing.Literal[ 1, 2, 3, 4, 5 ]
 
 
