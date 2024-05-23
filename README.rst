@@ -62,7 +62,7 @@ See what type it is:
 
 
 How to use it?
-------------
+---------------
 
 .. code-block:: python
 
