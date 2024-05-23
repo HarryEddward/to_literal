@@ -72,11 +72,11 @@ Como usarlo?
   test = testLiteral(hours='9:30')
   print(test.model_dump())
   
-  """
+  
   { 
     'hours': '9:30'
   }
-  """
+  
 
   #Bad Example:
   
