@@ -12,7 +12,7 @@ To_Literal
    :self-align: center
 
 ==============================
-Cambia de forma fácil a Literal[ ]
+.. b:: Cambia de forma fácil a Literal[ ]
 ==============================
 
 `Explora en la documentación » <https://peluqueriamael.com/docs>`_
