@@ -45,7 +45,7 @@ Who is it aimed at?
 Users who make use of Pydantic and typing in their Python code and need to validate data in an immutable form but with undefined data.
 
 How to use it in a simple way?
-----------------------------
+-------------------------------
 
 Import the library:
 
