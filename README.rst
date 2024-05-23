@@ -2,7 +2,7 @@ To_Literal
 ==========
 
 .. image:: https://badges.gitter.im/Join%20Chat.svg
-  :alt: Redis
+  :alt: Gitter
 .. image:: https://img.shields.io/pypi/dm/to_literal
   :alt: PyPI - Downloads
 
