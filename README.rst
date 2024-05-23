@@ -1,4 +1,5 @@
-# To_Literal
+To_Literal
+==========
 
 [![Redis](https://badges.gitter.im/Join%20Chat.svg)](#)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/to_literal)
@@ -22,14 +23,19 @@
 </p>
 <br>
 
-## Porque esta hecho?
+Porque esta hecho?
+------------------
+
 No hay ningúna forma limpia y fácil de convertir de un array a Literal, si hacemos uso de Pydantic para validar y suele cambiar el array indefinido pero inmutable, pues suele ser muy costoso a la hora de hacer una conversión.
 Y esta hecho para convertir un list en un Literal, para hacer úso en validación, para convertir valores indefinidos a definidos inmutables
 
-## Para quien esta dirigido?
+Para quien esta dirigido?
+-------------------------
+
 Usuarios que hacen uso de pydantic y uso de typing en su código de python y necesitan validar datos de forma inmutable pero con datos indefinidos
 
-## Como usarlo de forma simple?
+Como usarlo de forma simple?
+----------------------------
 
 Importamos la librería:
 
@@ -44,32 +50,34 @@ Vemos que tipo és:
 ```print(result) #typing.Literal[ 1, 2, 3, 4, 5 ]```
 
 
-## Como usarlo?
-```
-from pydantic import BaseModel
-from to_literal.v1 import toLiteral
+Como usarlo?
+------------
 
-hoursL = toLiteral([
-    '9:00',
-    '9:30',
-])
+.. code-block:: python
 
-class testLiteral(BaseModel):
-    hours: hoursL
+  from pydantic import BaseModel
+  from to_literal.v1 import toLiteral
 
+  hoursL = toLiteral([
+      '9:00',
+      '9:30',
+  ])
 
-#   Good Example:
-#
-#   YES  ->   test = testLiteral(hours='9:30')
-#   print(test.model_dump())
-#   { 
-#     'hours': '9:30'
-#   }
+  class testLiteral(BaseModel):
+      hours: hoursL
 
 
-#   Bad Example:
-#
-#   NO   ->   test = testLiteral(hours='10:30')
-#   print(test.model_dump())
+  #   Good Example:
+  #
+  #   YES  ->   test = testLiteral(hours='9:30')
+  #   print(test.model_dump())
+  #   { 
+  #     'hours': '9:30'
+  #   }
+
+
+  #   Bad Example:
+  #
+  #   NO   ->   test = testLiteral(hours='10:30')
+  #   print(test.model_dump())
 #   ERROR
-```
