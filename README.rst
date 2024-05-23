@@ -58,7 +58,8 @@ Hacemos úso del cast:
 
 Vemos que tipo és:
 
-```print(result) #typing.Literal[ 1, 2, 3, 4, 5 ]```
+.. code-block:: python
+  print(result) #typing.Literal[ 1, 2, 3, 4, 5 ]
 
 
 Como usarlo?
