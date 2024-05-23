@@ -58,6 +58,7 @@ Make use of the cast:
 See what type it is:
 
 .. code-block:: python
+  
   print(result) #typing.Literal[ 1, 2, 3, 4, 5 ]
 
 
