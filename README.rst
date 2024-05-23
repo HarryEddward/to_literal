@@ -1,69 +1,52 @@
 To_Literal
-==========
-
-
-
-
-
-
-.. raw:: html
-
-   <div align="center">
 
 .. image:: https://i.ibb.co/Cn8hhdz/image.png
-   :width: 300px
-   :height: 300px
-   :align: center
+:width: 300px
+:height: 300px
+:align: center
 
 ==============================
-**Cambia de forma fácil a Literal[ ]**
-==============================
+Easily Convert to Literal[ ]
 
-`Explora en la documentación » <https://peluqueriamael.com/docs>`_
+Explore the documentation » <https://peluqueriamael.com/docs>_
 
-`Report bug <https://github.com/twbs/bootstrap/issues/new?assignees=-&labels=bug&template=bug_report.yml>`_ · `Request feature <https://github.com/twbs/bootstrap/issues/new?assignees=&labels=feature&template=feature_request.yml>`_ · `Themes <https://themes.getbootstrap.com/>`_
+Report bug <https://github.com/twbs/bootstrap/issues/new?assignees=-&labels=bug&template=bug_report.yml>_ · Request feature <https://github.com/twbs/bootstrap/issues/new?assignees=&labels=feature&template=feature_request.yml>_ · Themes <https://themes.getbootstrap.com/>_
 
 .. image:: https://img.shields.io/pypi/dm/to_literal
-  :alt: PyPI - Downloads
+:alt: PyPI - Downloads
 
 .. image:: https://badges.gitter.im/Join%20Chat.svg
-  :alt: Gitter
+:alt: Gitter
 
-.. raw:: html
+Why it's made?
 
-   </div>
+There is no clean and easy way to convert an array to Literal, if we use Pydantic for validation and it usually changes the undefined but immutable array, it tends to be very costly when making a conversion. And it's made to convert a list into a Literal, for use in validation, to convert undefined values to defined immutables.
 
+Who is it for?
 
-Porque esta hecho?
-------------------
+Users who make use of Pydantic and typing in their Python code and need to validate data in an immutable but undefined manner.
 
-No hay ningúna forma limpia y fácil de convertir de un array a Literal, si hacemos uso de Pydantic para validar y suele cambiar el array indefinido pero inmutable, pues suele ser muy costoso a la hora de hacer una conversión.
-Y esta hecho para convertir un list en un Literal, para hacer úso en validación, para convertir valores indefinidos a definidos inmutables
+How to use it simply?
 
-Para quien esta dirigido?
--------------------------
-
-Usuarios que hacen uso de pydantic y uso de typing en su código de python y necesitan validar datos de forma inmutable pero con datos indefinidos
-
-Como usarlo de forma simple?
-----------------------------
-
-Importamos la librería:
-
-```from to_literal.v1 import toLiteral```
-
-Hacemos úso del cast:
-
-```result =  toLiteral([ 1, 2, 3, 4, 5 ])```
-
-Vemos que tipo és:
+Import the library:
 
 .. code-block:: python
-  print(result) #typing.Literal[ 1, 2, 3, 4, 5 ]
 
+from to_literal.v1 import toLiteral
 
-Como usarlo?
-------------
+Make use of the cast:
+
+.. code-block:: python
+
+result = toLiteral([ 1, 2, 3, 4, 5 ])
+
+See what type it is:
+
+.. code-block:: python
+
+print(result) #typing.Literal[ 1, 2, 3, 4, 5 ]
+
+How to use it?
 
 .. code-block:: python
 
@@ -71,27 +54,26 @@ Como usarlo?
   from to_literal.v1 import toLiteral
 
   hoursL = toLiteral([
-      '9:00',
-      '9:30',
+  '9:00',
+  '9:30',
   ])
 
   class testLiteral(BaseModel):
-      hours: hoursL
+  hours: hoursL
 
-
-  #   Good Example:
+  Good Example:
 
   test = testLiteral(hours='9:30')
   print(test.model_dump())
   """
-  { 
-    'hours': '9:30'
+  {
+  'hours': '9:30'
   }
   """
 
+  Bad Example:
 
-  #   Bad Example:
-  
   test = testLiteral(hours='10:30')
   print(test.model_dump())
-  #   ERROR
+
+  ERROR
