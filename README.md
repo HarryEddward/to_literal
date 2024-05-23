@@ -1,5 +1,6 @@
 # To_Literal
 
+![PyPI - Downloads](https://img.shields.io/pypi/dm/to_literal)
 
 <br>
 <p align="center">
