@@ -2,7 +2,10 @@ To_Literal
 ==========
 
 [![Redis](https://badges.gitter.im/Join%20Chat.svg)](#)
-![PyPI - Downloads](https://img.shields.io/pypi/dm/to_literal)
+
+.. image:: https://img.shields.io/pypi/dm/to_literal
+   :alt: PyPI - Downloads
+
 
 <br>
 <p align="center">
