@@ -6,25 +6,20 @@ To_Literal
 .. image:: https://img.shields.io/pypi/dm/to_literal
   :alt: PyPI - Downloads
 
+.. image:: https://i.ibb.co/Cn8hhdz/image.png
+   :width: 300px
+   :height: 300px
+   :align: center
 
-<br>
-<p align="center">
-  <img width="300px" height="300px" src="https://i.ibb.co/Cn8hhdz/image.png">
-</p>
+==============================
+Cambia de forma fácil a Literal[ ]
+==============================
 
-<h3 align="center">Cambia de forma fácil a Literal[ ]</h3>
+`Explora en la documentación » <https://peluqueriamael.com/docs>`_
 
-<p align="center">
-  <a href="https://peluqueriamael.com/docs"><strong>Explora en la documentación »</strong></a>
-</p>
-<p align="center">
-  <a href="https://github.com/twbs/bootstrap/issues/new?assignees=-&labels=bug&template=bug_report.yml">Report bug</a>
-  ·
-  <a href="https://github.com/twbs/bootstrap/issues/new?assignees=&labels=feature&template=feature_request.yml">Request feature</a>
-  ·
-  <a href="https://themes.getbootstrap.com/">Themes</a>
-</p>
-<br>
+`Report bug <https://github.com/twbs/bootstrap/issues/new?assignees=-&labels=bug&template=bug_report.yml>`_ · `Request feature <https://github.com/twbs/bootstrap/issues/new?assignees=&labels=feature&template=feature_request.yml>`_ · `Themes <https://themes.getbootstrap.com/>`_
+
+
 
 Porque esta hecho?
 ------------------
