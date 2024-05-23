@@ -15,10 +15,18 @@ To_Literal
 ==============================
 **Cambia de forma fácil a Literal[ ]**
 ==============================
+
+.. raw:: html
+
+   <div align="center">
+
 `Explora en la documentación » <https://peluqueriamael.com/docs>`_
 
 `Report bug <https://github.com/twbs/bootstrap/issues/new?assignees=-&labels=bug&template=bug_report.yml>`_ · `Request feature <https://github.com/twbs/bootstrap/issues/new?assignees=&labels=feature&template=feature_request.yml>`_ · `Themes <https://themes.getbootstrap.com/>`_
 
+.. raw:: html
+
+   </div>
 
 
 Porque esta hecho?
