@@ -3,8 +3,7 @@ To_Literal
 
 
 
-.. image:: https://badges.gitter.im/Join%20Chat.svg
-  :alt: Gitter
+
 
 
 .. raw:: html
@@ -26,6 +25,9 @@ To_Literal
 
 .. image:: https://img.shields.io/pypi/dm/to_literal
   :alt: PyPI - Downloads
+
+.. image:: https://badges.gitter.im/Join%20Chat.svg
+  :alt: Gitter
 
 .. raw:: html
 
