@@ -6,9 +6,7 @@ To_Literal
 
 .. image:: https://badges.gitter.im/Join%20Chat.svg
   :alt: Gitter
-
-
-
+  :display: flex
 
 
 .. raw:: html
@@ -19,7 +17,7 @@ To_Literal
    :width: 300px
    :height: 300px
    :align: center
-   
+
 ==============================
 **Cambia de forma fácil a Literal[ ]**
 ==============================
