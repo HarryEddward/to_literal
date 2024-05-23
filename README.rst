@@ -9,7 +9,7 @@ To_Literal
 .. image:: https://i.ibb.co/Cn8hhdz/image.png
    :width: 300px
    :height: 300px
-   :align: center
+   :align-items: center
 
 ==============================
 Cambia de forma fácil a Literal[ ]
