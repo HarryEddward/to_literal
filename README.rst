@@ -7,16 +7,19 @@ To_Literal
 .. image:: https://badges.gitter.im/Join%20Chat.svg
   :alt: Gitter
 
-.. image:: https://i.ibb.co/Cn8hhdz/image.png
-   :width: 300px
-   :height: 300px
-   :align: center
+
 
 
 
 .. raw:: html
 
    <div align="center">
+
+.. image:: https://i.ibb.co/Cn8hhdz/image.png
+   :width: 300px
+   :height: 300px
+   :align: center
+   
 ==============================
 **Cambia de forma fácil a Literal[ ]**
 ==============================
