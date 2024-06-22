@@ -83,19 +83,11 @@ How to use it?
       hours: hoursL
 
 
-  #   Good Example:
-
+  # Good Example: ({ 'hours': '9:30' })
   test = testLiteral(hours='9:30')
   print(test.model_dump())
-  """
-  { 
-    'hours': '9:30'
-  }
-  """
 
 
-  #   Bad Example:
-  
+  # Bad Example: (ERROR)
   test = testLiteral(hours='10:30')
   print(test.model_dump())
-  #   ERROR
