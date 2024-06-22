@@ -1,6 +1,7 @@
 To_Literal
 ==========
-
+ *Avoid writing extra code, just use it*
+============
 
 
 
